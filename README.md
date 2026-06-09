@@ -1,19 +1,40 @@
-# House Price Prediction using Linear Regression
+# House Price Prediction in Tehran
 
-A Machine Learning project that predicts house prices using the Linear Regression algorithm.
+A Machine Learning project for predicting apartment prices in Tehran using the Linear Regression algorithm.
 
-## Overview
+## Dataset Description
 
-This project demonstrates the complete Machine Learning workflow, including data preprocessing, feature analysis, model training, and prediction.
+The dataset contains information about approximately 4,000 apartments in Tehran.
 
-## Features
+Features:
 
-* Data Cleaning and Preprocessing
-* Exploratory Data Analysis (EDA)
-* Feature Selection
-* Linear Regression Model Training
-* Model Evaluation
-* House Price Prediction
+* Area (Square Meters)
+* Number of Rooms
+* Parking Availability
+* Warehouse Availability
+* Elevator Availability
+* Address
+* Price (Toman)
+* Price (USD)
+
+## Data Preprocessing
+
+Several data quality issues were handled before training the model:
+
+* Removed records with missing address values
+* Removed unrealistic area values (outliers)
+* Cleaned and prepared the dataset for machine learning
+* Converted categorical features into numerical representations
+
+## Machine Learning Workflow
+
+1. Data Cleaning
+2. Exploratory Data Analysis (EDA)
+3. Feature Engineering
+4. Data Splitting
+5. Linear Regression Model Training
+6. Model Evaluation
+7. Price Prediction
 
 ## Technologies Used
 
@@ -23,20 +44,13 @@ This project demonstrates the complete Machine Learning workflow, including data
 * Scikit-Learn
 * Matplotlib
 
-## Machine Learning Algorithm
+## Algorithm
 
 * Linear Regression
 
-## Results
+## Objective
 
-The model was trained on housing data and used to estimate house prices based on property features.
-
-## Future Improvements
-
-* Random Forest Regressor
-* XGBoost Regressor
-* Hyperparameter Tuning
-* Feature Engineering
+The goal of this project is to estimate apartment prices in Tehran based on property characteristics and location-related features.
 
 ## Author
 
